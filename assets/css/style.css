@@ -23,3 +23,28 @@
     z-index: -999;
     pointer-events: none;
 }
+.theme-switcher {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    z-index: 100;
+}
+.theme-switcher .setting {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background: #1f1f1f;
+    color: #c1c1c1;
+}
+.theme-switcher .setting i {
+    animation: rotation360 3s infinite linear;
+}
+@keyframes rotation360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
