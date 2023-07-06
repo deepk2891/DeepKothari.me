@@ -19,8 +19,16 @@
         <source src="assets/video/video2.mp4" type="video/mp4">
     </video>
     <div class="layer"></div>
-    <div class="theme-switcher">
+    <div class="theme-switcher" data-bs-toggle="offcanvas" data-bs-target="#config-bar">
         <span class="setting rounded d-flex align-items-center justify-content-center fs-6"><i class="bi bi-gear"></i></span>
+    </div>
+    <div class="offcanvas offcanvas-end" id="config-bar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="config-bar">Configuration</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        </div>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
