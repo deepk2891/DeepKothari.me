@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --white: #FFFFFF;
+    --dark1: #1f1f1f;
+    --dark2: #191919;
+    --green: #28e98c;
+    --yellow: #e4af12;
+    --orange: #fe6f1d;
+    --light-blue: #14c5fd;
+    --dark-blue: #1338f3;
+    --gray: #c0c0c0;
+    --red: #f31313;
+    --pink: #ff99cc;
+}
 * {
     margin: 0;
     padding: 0;
@@ -55,4 +68,48 @@ body, html {
         transform: rotate(360deg);
     }
 
+}
+#config-bar {
+    width: 66.25rem;
+    background: var(--dark2);
+    color: var(--white);
+    padding: 6rem 8.375rem;
+}
+.config-bar-close {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--white);
+    top: 1.2rem;
+    right: 1.2rem;
+}
+.offcanvas-title {
+    margin: 0 0 4rem 0;
+}
+.offcanvas-body p {
+    font-size: 0.813rem;
+    margin-bottom: 1.563rem;
+}
+.color-switch:nth-child(1) {
+    color: var(--green);
+}
+.color-switch:nth-child(2) {
+    color: var(--yellow);
+}
+.color-switch:nth-child(3) {
+    color: var(--orange);
+}
+.color-switch:nth-child(4) {
+    color: var(--light-blue);
+}
+.color-switch:nth-child(5) {
+    color: var(--gray);
+}
+.color-switch:nth-child(6) {
+    color: var(--dark-blue);
+}
+.color-switch:nth-child(7) {
+    color: var(--red);
+}
+.color-switch:nth-child(8) {
+    color: var(--pink);
 }
