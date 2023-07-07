@@ -113,3 +113,13 @@ body, html {
 .color-switch:nth-child(8) {
     color: var(--pink);
 }
+.themes ul {
+    margin-top: 3rem;
+}
+.config-heading {
+    font-size: 0.913rem;
+    letter-spacing: 0.05rem;
+}
+.themes li video {
+    height: 7rem;
+}
