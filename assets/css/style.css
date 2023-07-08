@@ -123,3 +123,29 @@ body, html {
 .themes li video {
     height: 7rem;
 }
+/* common */
+.ribbon {
+    width: 9.375rem;
+    height: 9.375rem;
+    overflow: hidden;
+    position: absolute;
+}
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 14.063rem;
+    padding: 0.5rem 0;
+    background-color: #3498db;
+    color: #fff;
+    font: 700 1.125px/1;
+    text-align: center;
+}
+.ribbon-top-right {
+    top: 0rem;
+    right: 0rem;
+}
+.ribbon-top-right span {
+    left: -0.625rem;
+    top: 1.25rem;
+    transform: rotate(45deg);
+}
