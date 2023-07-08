@@ -63,6 +63,26 @@
         </ul>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min..js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            // Click event handler for video links
+            $('a[id^="video"]').click(function (event)
+            {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                // Get the video URL from the clicked link's href attribute
+                var videoUrl = $(this).find('video').attr('src');
+
+                // Update the source of the body-overlay video element with the new URL
+                $('.body-overlay source').attr('src',videoUrl);
+
+                // Reload the video to apply the new source
+                $('.body-overlay')[ 0 ].load();
+            });
+        });
+    </script>
 </body>
 
 </html>
