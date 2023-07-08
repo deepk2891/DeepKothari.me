@@ -23,7 +23,7 @@
         font-size: 12px !important;
     }
 }
-@media (max-width:546px) {
+@media (max-width:576px) {
     html {
         font-size: 11px !important;
     }
