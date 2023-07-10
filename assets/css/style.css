@@ -163,3 +163,8 @@ body, html {
     font-size: 1.8rem;
     z-index: 99;
 }
+/* MENU-BAR */
+#menu-bar {
+    width: 21.563rem;
+    background-color: var(--dark2);
+}
