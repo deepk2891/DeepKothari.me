@@ -24,6 +24,8 @@ body, html {
     background: #1f1f1f;
     scroll-behavior: smooth;
 }
+
+/* BODY-OVERLAY */
 .body-overlay {
     position: fixed;
     left: 0;
@@ -33,6 +35,8 @@ body, html {
     object-fit: cover;
     z-index: -1000;
 }
+
+/* LAYER ON BODY-OVERLAY */
 .layer {
     position: fixed;
     top: 0;
@@ -44,6 +48,8 @@ body, html {
     z-index: -999;
     pointer-events: none;
 }
+
+/* SETTING */
 .theme-switcher {
     position: fixed;
     left: 0;
@@ -69,11 +75,13 @@ body, html {
     }
 
 }
+
+/* CONFIGURATION-BAR */
 #config-bar {
     width: 66.25rem;
     background: var(--dark2);
     color: var(--white);
-    padding: 6rem 8.375rem;
+    padding: 3.5rem 6rem;
 }
 .config-bar-close {
     position: absolute;
@@ -123,7 +131,8 @@ body, html {
 .themes li video {
     height: 7rem;
 }
-/* common */
+
+/* RIBBON */
 .ribbon {
     width: 9.375rem;
     height: 9.375rem;
