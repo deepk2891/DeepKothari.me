@@ -21,7 +21,6 @@ body, html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #999999;
-    background: #1f1f1f;
     scroll-behavior: smooth;
 }
 
@@ -134,29 +133,16 @@ body, html {
 
 /* RIBBON */
 .ribbon {
-    width: 9.375rem;
-    height: 9.375rem;
-    overflow: hidden;
-    position: absolute;
-}
-.ribbon span {
-    position: absolute;
-    display: block;
-    width: 14.063rem;
-    padding: 0.5rem 0;
+    position: fixed;
+    top: -1rem;
+    right: -1rem;
+    padding: 0.5rem 4.063rem;
+    text-align: center;
     color: var(--dark1);
     background: #F1F2B5;
     background: -webkit-linear-gradient(to right, #135058, #F1F2B5);
     background: linear-gradient(to right, #135058, #F1F2B5);
     font-size: 1.125rem;
-    text-align: center;
-}
-.ribbon-top-right {
-    top: 0rem;
-    right: 0rem;
-}
-.ribbon-top-right span {
-    left: -0.625rem;
-    top: 1.25rem;
-    transform: rotate(45deg);
+    transform: translateX(3.438rem);
+    rotate: 40deg;
 }
