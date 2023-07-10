@@ -144,9 +144,11 @@ body, html {
     display: block;
     width: 14.063rem;
     padding: 0.5rem 0;
-    background-color: #3498db;
-    color: #fff;
-    font: 700 1.125px/1;
+    color: var(--dark1);
+    background: #F1F2B5;
+    background: -webkit-linear-gradient(to right, #135058, #F1F2B5);
+    background: linear-gradient(to right, #135058, #F1F2B5);
+    font-size: 1.125rem;
     text-align: center;
 }
 .ribbon-top-right {
