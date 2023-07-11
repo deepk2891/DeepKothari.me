@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     --white: #FFFFFF;
+    --offwhite: #999999;
     --dark1: #1f1f1f;
     --dark2: #191919;
     --green: #28e98c;
@@ -185,4 +186,24 @@ body, html {
 #menu-bar {
     width: 21.563rem;
     background-color: var(--dark2);
+    padding-top: 3.125rem;
+}
+#menu-bar p {
+    color: var(--offwhite);
+    font-size: 18px;
+}
+.menu li {
+    padding: 11px 0;
+}
+.menu li a {
+    font-size: 14px;
+    color: var(--offwhite);
+}
+.menu li a i {
+    font-size: 22px;
+    color: var(--offwhite);
+}
+.social li a {
+    font-size: 22px;
+    color: var(--offwhite);
 }
