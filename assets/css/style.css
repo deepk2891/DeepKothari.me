@@ -28,14 +28,23 @@ body, html {
     scroll-behavior: smooth;
 }
 .hover01 {
-    color: var(--green);
-    border-color: var(--green);
+    transition: var(--transition02);
+}
+.hover01:hover {
+    color: var(--green) !important;
+    border-color: var(--green) !important;
 }
 .hover02 {
-    border-color: var(--green);
+    transition: var(--transition02);
+}
+.hover02:hover {
+    border-color: var(--green) !important;
 }
 .hover03 {
-    color: var(--green);
+    transition: var(--transition02);
+}
+.hover03:hover {
+    color: var(--green) !important;
 }
 /* BODY-OVERLAY */
 .body-overlay {
