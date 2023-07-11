@@ -27,7 +27,16 @@ body, html {
     color: #999999;
     scroll-behavior: smooth;
 }
-
+.hover01 {
+    color: var(--green);
+    border-color: var(--green);
+}
+.hover02 {
+    border-color: var(--green);
+}
+.hover03 {
+    color: var(--green);
+}
 /* BODY-OVERLAY */
 .body-overlay {
     position: fixed;
