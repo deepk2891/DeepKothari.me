@@ -28,10 +28,12 @@ body, html {
     color: #999999;
     scroll-behavior: smooth;
 }
+/* HOVER SYSTEM */
 .hover01 {
     transition: var(--transition02);
 }
 .hover01:hover {
+    transform: translateY(-4px);
     color: var(--green) !important;
     border-color: var(--green) !important;
 }
@@ -39,12 +41,14 @@ body, html {
     transition: var(--transition02);
 }
 .hover02:hover {
+    transform: translateY(-4px);
     border-color: var(--green) !important;
 }
 .hover03 {
     transition: var(--transition02);
 }
 .hover03:hover {
+    transform: translateY(-4px);
     color: var(--green) !important;
 }
 /* BODY-OVERLAY */
@@ -198,12 +202,21 @@ body, html {
 .menu li a {
     font-size: 14px;
     color: var(--offwhite);
+    transition: var(--transition03);
 }
 .menu li a i {
     font-size: 22px;
     color: var(--offwhite);
+    transition: var(--transition02);
 }
 .social li a {
     font-size: 22px;
     color: var(--offwhite);
+}
+.menu li a:hover {
+    color: var(--white);
+    transform: translateX(6px);
+}
+.menu li a:hover i {
+    color: var(--green);
 }
