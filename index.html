@@ -41,14 +41,14 @@
         <button class="config-bar-close btn" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
         <p class="config-heading fw-normal">COLORS</p>
         <div class="pt-2 mb-5">
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch green me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch yellow me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch orange me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch light-blue me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch gray me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch dark-blue me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch red me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <a class="color-switch pink me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
         </div>
         <p class="config-heading fw-normal">THREE DIMENSIONAL SHAPES</p>
         <ul class="themes p-0 mt-2 d-flex flex-wrap align-content-center">
@@ -119,6 +119,40 @@
 
                 // Reload the video to apply the new source
                 $('.body-overlay')[ 0 ].load();
+            });
+
+            // color-switch
+            $(".green").click(function ()
+            {
+                $(":root").css("--green","#28e98c")
+            });
+            $(".yellow").click(function ()
+            {
+                $(":root").css("--green","#e4af12")
+            });
+            $(".orange").click(function ()
+            {
+                $(":root").css("--green","#fe6f1d")
+            });
+            $(".light-blue").click(function ()
+            {
+                $(":root").css("--green","#14c5fd")
+            });
+            $(".gray").click(function ()
+            {
+                $(":root").css("--green","#c0c0c0")
+            });
+            $(".dark-blue").click(function ()
+            {
+                $(":root").css("--green","#1338f3")
+            });
+            $(".red").click(function ()
+            {
+                $(":root").css("--green","#f31313")
+            });
+            $(".pink").click(function ()
+            {
+                $(":root").css("--green","#ff99cc")
             });
         });
     </script>

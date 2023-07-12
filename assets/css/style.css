@@ -124,28 +124,28 @@ body, html {
     margin-bottom: 1.563rem;
 }
 .color-switch:nth-child(1) {
-    color: var(--green);
+    color: #28e98c;
 }
 .color-switch:nth-child(2) {
-    color: var(--yellow);
+    color: #e4af12;
 }
 .color-switch:nth-child(3) {
-    color: var(--orange);
+    color: #fe6f1d;
 }
 .color-switch:nth-child(4) {
-    color: var(--light-blue);
+    color: #14c5fd;
 }
 .color-switch:nth-child(5) {
-    color: var(--gray);
+    color: #c0c0c0;
 }
 .color-switch:nth-child(6) {
-    color: var(--dark-blue);
+    color: #1338f3;
 }
 .color-switch:nth-child(7) {
-    color: var(--red);
+    color: #f31313;
 }
 .color-switch:nth-child(8) {
-    color: var(--pink);
+    color: #ff99cc;
 }
 .themes ul {
     margin-top: 3rem;
