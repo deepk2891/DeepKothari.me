@@ -105,36 +105,44 @@
     <nav class="pt-3 rounded-pill">
         <ul class="p-0">
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Home" href="#"><i
-                     class="las la-home"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Home" href="#">
+                    <i class="las la-home"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" href="#"><i
-                     class="lar la-user"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" href="#">
+                    <i class="lar la-user"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Resume" href="#"><i
-                     class="las la-briefcase"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Resume" href="#">
+                    <i class="las la-briefcase"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Services" href="#"><i
-                     class="las la-stream"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Services" href="#">
+                    <i class="las la-stream"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skills" href="#"><i
-                     class="las la-shapes"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skills" href="#">
+                    <i class="las la-shapes"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio" href="#"><i
-                     class="las la-grip-vertical"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio" href="#">
+                    <i class="las la-grip-vertical"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Testimonial" href="#"><i
-                     class="lar la-comment"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Testimonial" href="#">
+                    <i class="lar la-comment"></i>
+                </a>
             </li>
             <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact" href="#"><i
-                     class="las la-envelope"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact" href="#">
+                    <i class="las la-envelope"></i>
+                </a>
             </li>
         </ul>
     </nav>
@@ -144,7 +152,7 @@
     <script>
         $(document).ready(function ()
         {
-
+            // TOOL-TIP
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
             const tooltipList = [ ...tooltipTriggerList ].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
