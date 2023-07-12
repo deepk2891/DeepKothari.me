@@ -224,3 +224,19 @@ body, html {
 .menu li a:hover i {
     color: var(--green);
 }
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4rem;
+    border: 1px solid #575757;
+}
+nav ul li a {
+    font-size: 20px;
+    color: var(--offwhite);
+    transition: var(--transition03);
+}
+nav ul li a:hover {
+    color: var(--green);
+}
