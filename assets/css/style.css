@@ -28,6 +28,10 @@ body, html {
     color: #999999;
     scroll-behavior: smooth;
 }
+/* CURSOR POINTER */
+.cursor {
+    cursor: pointer;
+}
 /* HOVER SYSTEM */
 .hover01 {
     transition: var(--transition02);

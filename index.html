@@ -43,36 +43,36 @@
         <button class="config-bar-close btn" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
         <p class="config-heading fw-normal">COLORS</p>
         <div class="pt-2 mb-5">
-            <a class="color-switch green me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch yellow me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch orange me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch light-blue me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch gray me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch dark-blue me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch red me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
-            <a class="color-switch pink me-3" href="javascript:void(0);"><i class="bi bi-circle-fill fs-3"></i></a>
+            <span class="color-switch cursor green me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor yellow me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor orange me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor light-blue me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor gray me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor dark-blue me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor red me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
+            <span class="color-switch cursor pink me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
         </div>
         <p class="config-heading fw-normal">THREE DIMENSIONAL SHAPES</p>
         <ul class="themes p-0 mt-2 d-flex flex-wrap align-content-center">
             <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">1. Earth Lines Sphere</span>
-                <a id="video1" href="javascript:void(0);"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video1.mp4"></video></a>
+                <span class="cursor" id="video1" href="#"><video muted autoplay loop
+                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video1.mp4"></video></span>
             </li>
             <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">2. 3D Abstract Ball</span>
-                <a id="video2" href="javascript:void(0);"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video2.mp4"></video></a>
+                <span class="cursor" id="video2" href="#"><video muted autoplay loop
+                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video2.mp4"></video></span>
             </li>
             <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">3. Water Waves</span>
-                <a id="video3" href="javascript:void(0);"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video3.mp4"></video></a>
+                <span class="cursor" id="video3" href="#"><video muted autoplay loop
+                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video3.mp4"></video></span>
             </li>
             <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">4. Liquids Wavy</span>
-                <a id="video4" href="javascript:void(0);"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video4.mp4"></video></a>
+                <span class="cursor" id="video4" href="#"><video muted autoplay loop
+                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video4.mp4"></video></span>
             </li>
             <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">5. Simple Strings</span>
-                <a id="video5" href="javascript:void(0);"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video5.mp4"></video></a>
+                <span class="cursor" id="video5" href="#"><video muted autoplay loop
+                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video5.mp4"></video></span>
             </li>
         </ul>
     </div>
@@ -109,7 +109,7 @@
         $(document).ready(function ()
         {
             // Click event handler for video links
-            $('a[id^="video"]').click(function (event)
+            $('span[id^="video"]').click(function (event)
             {
                 event.preventDefault(); // Prevent default anchor behavior
 
