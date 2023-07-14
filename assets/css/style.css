@@ -248,4 +248,32 @@ nav ul li a:hover {
 .profile {
     border: 1px solid #575757;
     border-radius: 1.8rem;
+    color: var(--offwhite);
+}
+.profile-title {
+    font-size: 14px;
+}
+.profile .profile-subtitle {
+    font-size: 24px;
+}
+.profile .profile-subtitle p {
+    font-size: 14px;
+}
+.profile-icons a {
+    color: var(--offwhite);
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid #575757;
+}
+.hire-me {
+    padding: 10px 0;
+    color: var(--dark2);
+    background-color: var(--green);
+    border: 2px solid #575757;
+    transition: var(--transition02);
+}
+.hire-me:hover {
+    color: var(--green) !important;
+    border-color: var(--green) !important;
+    background-color: var(--dark1) !important;
 }
