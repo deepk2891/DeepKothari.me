@@ -249,6 +249,8 @@ nav ul li a:hover {
     border: 1px solid #575757;
     border-radius: 1.8rem;
     color: var(--offwhite);
+    max-width: 600px;
+    margin: auto;
 }
 .profile-title {
     font-size: 14px;
