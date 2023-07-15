@@ -231,7 +231,7 @@
                         <h2 class="display-1 white">Say Hi from <span class="green">Deep</span>, Website Designer and Developer</h2>
                         <p class="w-50 py-4 fs-6">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
                         <div class="d-flex justify-content-center">
-                            <a href="#" class="myprojects position-relative inline-block text-decoration-none white border border-1 rounded-circle p-2">
+                            <a href="#" class="myprojects position-relative inline-block text-decoration-none white border border-1 rounded-circle p-2 green">
                                 <img src="assets/image/round-text.png" alt="My Projects" id="myprojects-img">
                                 <i class="las la-arrow-down"></i>
                             </a>
@@ -251,6 +251,19 @@
             // TOOL-TIP
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
             const tooltipList = [ ...tooltipTriggerList ].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+            // MY PROJECTS IMAGE IN HOME SECTION ROTATION WHILE BODY SCROLLING
+            window.addEventListener(
+                "scroll",
+                () =>
+                {
+                    document.body.style.setProperty(
+                        "--scroll",
+                        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                    );
+                },
+                false
+            );
 
             // Click event handler for video links
             $('span[id^="video"]').click(function (event)
