@@ -300,3 +300,16 @@ nav ul li a:hover {
     font-size: 16px;
     padding-right: 5px;
 }
+/* HOME SECTION STARTED */
+.home p {
+    line-height: 1.7;
+}
+.myprojects i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+/* HOME SECTION ENDED */
