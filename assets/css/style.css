@@ -35,6 +35,13 @@ body, html {
 .dvh-100 {
     height: 100dvh;
 }
+/* COLOR CLASSES */
+.white {
+    color: var(--white);
+}
+.green {
+    color: var(--green);
+}
 /* HOVER SYSTEM */
 .hover01 {
     transition: var(--transition02);
@@ -279,4 +286,17 @@ nav ul li a:hover {
     color: var(--green) !important;
     border-color: var(--green) !important;
     background-color: var(--dark1) !important;
+}
+.section {
+    padding: 4.5rem 0 0 0;
+}
+.section-title {
+    font-size: 14px;
+    border: 1px solid #575757;
+    padding: 0.5rem 0.9rem;
+    margin-bottom: 3.313rem;
+}
+.section-title i {
+    font-size: 16px;
+    padding-right: 5px;
 }
