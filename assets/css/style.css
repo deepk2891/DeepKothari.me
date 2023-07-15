@@ -184,8 +184,8 @@ body, html {
 .menu-bar-control {
     right: 4rem;
     top: 4rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 56px;
+    height: 56px;
     border: 1px solid #575757;
     transition: var(--transition03);
     background: #1f1f1f;
@@ -250,6 +250,7 @@ nav ul li a:hover {
     border-radius: 1.8rem;
     color: var(--offwhite);
     max-width: 600px;
+    width: 391px;
     margin: auto;
 }
 .profile-title {
