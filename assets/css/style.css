@@ -367,3 +367,9 @@ body {
 .service span {
     font-size: 14px;
 }
+/* SKILLS */
+.skill {
+    border: 2px solid #565656;
+    padding: 54px 0 48px 0;
+    margin-bottom: 20px;
+}
