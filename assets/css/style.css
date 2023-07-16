@@ -357,3 +357,13 @@ body {
     top: 10px;
     z-index: -1;
 }
+.services .service {
+    border: 1px solid #575757;
+    padding: 44px 48px 41px;
+}
+.services .service p {
+    font-size: 16px;
+}
+.service span {
+    font-size: 14px;
+}
