@@ -373,3 +373,8 @@ body {
     padding: 54px 0 48px 0;
     margin-bottom: 20px;
 }
+/* PORTFOLIO */
+.project img {
+    height: 30rem;
+    width: 100%;
+}
