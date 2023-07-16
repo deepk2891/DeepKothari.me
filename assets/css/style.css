@@ -328,3 +328,32 @@ body {
     min-height: 200vh;
 }
 /* HOME SECTION ENDED */
+/* RESUME */
+.resume .item {
+    position: relative;
+    padding-left: 74px;
+    padding-bottom: 68px;
+}
+.resume .item p {
+    font-size: 15px;
+}
+.resume .item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    height: 14px;
+    width: 14px;
+    background-color: var(--offwhite);
+    border-radius: 50%;
+}
+.resume .item::after {
+    content: "";
+    background: #333333;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    z-index: -1;
+}
