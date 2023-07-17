@@ -387,3 +387,16 @@ body {
 .review img {
     height: 50px;
 }
+/* CONTACT */
+.send-msg {
+    padding: 10px 0;
+    color: var(--dark2);
+    background-color: var(--green);
+    border: 2px solid transparent;
+    transition: var(--transition02);
+}
+.send-msg:hover {
+    color: var(--green) !important;
+    border-color: var(--green) !important;
+    background-color: var(--dark1) !important;
+}
