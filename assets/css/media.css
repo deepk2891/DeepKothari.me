@@ -22,6 +22,15 @@
     html {
         font-size: 12px !important;
     }
+    .menu-bar-control {
+        top: 0;
+    }
+    .theme-switcher {
+        top: 25px;
+    }
+    body {
+        padding: 0 1rem;
+    }
 }
 @media (max-width:576px) {
     html {
