@@ -557,6 +557,18 @@
     <script>
         $(document).ready(function ()
         {
+            // Disable right-click context menu
+            document.addEventListener('contextmenu',function (e)
+            {
+                e.preventDefault();
+            });
+            // Disable F12 key and Ctrl+Shift+I (Inspect Element) shortcut
+            document.onkeydown = function (e)
+            {
+                if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                    e.preventDefault();
+                }
+            };
             // TOOL-TIP
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
             const tooltipList = [ ...tooltipTriggerList ].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
