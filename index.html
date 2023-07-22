@@ -35,7 +35,7 @@
     </a> -->
     <!-- SETTING -->
     <div class="theme-switcher" data-bs-toggle="offcanvas" data-bs-target="#config-bar">
-        <span class="setting rounded d-flex align-items-center justify-content-center"><i class="bi bi-gear"></i></span>
+        <span class="setting rounded d-flex align-items-center justify-content-center"><i class="las la-cog"></i></span>
     </div>
     <!-- CONFIGURATION-BAR -->
     <div class="offcanvas offcanvas-end overflow-auto" id="config-bar">
@@ -557,18 +557,18 @@
     <script>
         $(document).ready(function ()
         {
-            // Disable right-click context menu
-            document.addEventListener('contextmenu',function (e)
-            {
-                e.preventDefault();
-            });
-            // Disable F12 key and Ctrl+Shift+I (Inspect Element) shortcut
-            document.onkeydown = function (e)
-            {
-                if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-                    e.preventDefault();
-                }
-            };
+            // // Disable right-click context menu
+            // document.addEventListener('contextmenu',function (e)
+            // {
+            //     e.preventDefault();
+            // });
+            // // Disable F12 key and Ctrl+Shift+I (Inspect Element) shortcut
+            // document.onkeydown = function (e)
+            // {
+            //     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+            //         e.preventDefault();
+            //     }
+            // };
             // TOOL-TIP
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
             const tooltipList = [ ...tooltipTriggerList ].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

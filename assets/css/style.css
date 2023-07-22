@@ -100,11 +100,12 @@ body, html {
     cursor: pointer;
     height: 40px;
     width: 40px;
-    background: #1f1f1f;
-    color: #c1c1c1;
+    background-color: #A1FFCE;
+    color: var(--dark2);
 }
 .theme-switcher .setting i {
-    animation: rotation360 3s infinite linear;
+    animation: rotation360 1.5s infinite linear;
+    font-size: 25px;
 }
 @keyframes rotation360 {
     0% {
