@@ -375,8 +375,6 @@ body {
 }
 /* PORTFOLIO */
 .live-preview {
-    display: flex;
-    align-items: center;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
