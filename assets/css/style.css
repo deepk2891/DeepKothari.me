@@ -279,7 +279,7 @@ nav ul li a:hover {
     padding: 10px 0;
     color: var(--dark2);
     background-color: var(--green);
-    border: 2px solid #575757;
+    border: 2px solid transparent;
     transition: var(--transition02);
 }
 .hire-me:hover {
@@ -313,10 +313,10 @@ nav ul li a:hover {
     left: calc(50% - 15px);
 }
 #myprojects-img {
-    animation: rotate 1s linear infinite;
+    animation: rotate 0.1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
-    animation-iteration-count: 1;
+    animation-iteration-count: 5;
     animation-fill-mode: both;
 }
 @keyframes rotate {
@@ -325,7 +325,7 @@ nav ul li a:hover {
     }
 }
 body {
-    min-height: 200vh;
+    min-height: 500vh;
 }
 /* HOME SECTION ENDED */
 /* RESUME */
@@ -373,6 +373,62 @@ body {
     padding: 54px 0 48px 0;
     margin-bottom: 20px;
 }
+.skills .html {
+    height: 2.8125rem;
+    width: 9.375rem;
+}
+.skills .css {
+    height: 2.8125rem;
+    width: 9.375rem;
+}
+.skills .bootstrap {
+    height: 2.8125rem;
+    width: 10.625rem;
+}
+.skills .tailwind {
+    height: 2.8125rem;
+    width: 11.875rem;
+}
+.skills .jquery {
+    height: 2.8125rem;
+    width: 9.375rem;
+}
+.skills .jquery-ui {
+    height: 2.8125rem;
+    width: 11.25rem;
+}
+.skills .javascript {
+    height: 2.8125rem;
+    width: 11.25rem;
+}
+.skills .vscode {
+    height: 2.8125rem;
+    width: 17rem;
+}
+.skills .c {
+    height: 2.8125rem;
+    width: 5rem;
+}
+.skills .git {
+    height: 2.8125rem;
+    width: 7.5rem;
+}
+.skills .github {
+    height: 2.8125rem;
+    width: 9.375rem;
+}
+.skills .vercel {
+    height: 2.8125rem;
+    width: 9.375rem;
+}
+.skills .netlify {
+    height: 2.8125rem;
+    width: 9.375rem;
+}
+.skills .react {
+    height: 2.8125rem;
+    width: 9rem;
+}
 /* PORTFOLIO */
 .live-preview {
     font-size: 1rem;
@@ -399,8 +455,12 @@ body {
     height: 50px;
 }
 /* CONTACT */
+.contact {
+    outline: none;
+}
 .send-msg {
-    padding: 10px 0;
+    font-size: 1.3rem;
+    padding: 8px 0;
     color: var(--dark2);
     background-color: var(--green);
     border: 2px solid transparent;
@@ -409,5 +469,5 @@ body {
 .send-msg:hover {
     color: var(--green) !important;
     border-color: var(--green) !important;
-    background-color: var(--dark1) !important;
+    background-color: transparent !important;
 }
