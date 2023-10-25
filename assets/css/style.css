@@ -183,7 +183,7 @@ body, html {
     color: var(--dark1);
     background: #F1F2B5;
     background: -webkit-linear-gradient(to right, #135058, #F1F2B5);
-    background: linear-gradient(to right, #135058, #F1F2B5);
+    background: linear-gradient(to right, var(--green), #F1F2B5);
     font-size: 1.125rem;
     transform: translateX(3.438rem);
     rotate: 40deg;
