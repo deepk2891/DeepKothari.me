@@ -1,598 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Hi there! My names Deep Kothari from Surat located in Gujarat, India. I hold a bachelor's degree in Computer Applications and I am currently on a self-chosen path to learn Full Stack Web Development."
+		/>
+		<title>Deep Kothari - 3D Portfolio</title>
+		<!-- FAV-ICON -->
+		<link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon" />
+		<!-- LINE AWESOME -->
+		<link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-     content="Hi there! My names Deep Kothari from Surat located in Gujarat, India. I hold a bachelor's degree in Computer Applications and I am currently on a self-chosen path to learn Full Stack Web Development.">
-    <title>Deep Kothari - 3D Portfolio</title>
-    <!-- FAV-ICON -->
-    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
-    <!-- LINE AWESOME -->
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<!-- BootStrap css -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<!-- MEDIA -->
+		<link rel="stylesheet" href="assets/css/media.css" />
+	</head>
 
-    <!-- BootStrap css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- MEDIA -->
-    <link rel="stylesheet" href="assets/css/media.css">
-</head>
-
-<body>
-    <!-- BODY-OVERLAY -->
-    <video class="body-overlay" muted autoplay loop>
-        <source src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video3.mp4" type="video/mp4">
-    </video>
-    <!-- LAYER -->
-    <div class="layer"></div>
-    <!-- RIBBON -->
-    <!-- <a href="https://github.com/deepk2891" target="_blank">
+	<body>
+		<!-- BODY-OVERLAY -->
+		<video class="body-overlay" muted autoplay loop>
+			<source src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video3.mp4" type="video/mp4" />
+		</video>
+		<!-- LAYER -->
+		<div class="layer"></div>
+		<!-- RIBBON -->
+		<!-- <a href="https://github.com/deepk2891" target="_blank">
         <span class="ribbon fw-bolder"><i class="bi bi-github pe-2"></i>GITHUB</span>
     </a> -->
-    <!-- SETTING -->
-    <div class="theme-switcher" data-bs-toggle="offcanvas" data-bs-target="#config-bar">
-        <span class="setting rounded d-flex align-items-center justify-content-center"><i class="las la-cog"></i></span>
-    </div>
-    <!-- CONFIGURATION-BAR -->
-    <div class="offcanvas offcanvas-end overflow-auto" id="config-bar">
-        <h5 class="offcanvas-title fs-2 px-0 pt-0 fw-light">Configuration</h5>
-        <button class="config-bar-close btn" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
-        <p class="config-heading fw-normal">COLORS</p>
-        <div class="pt-2 mb-5">
-            <span class="color-switch cursor default-green me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor yellow me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor orange me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor light-blue me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor gray me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor dark-blue me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor red me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-            <span class="color-switch cursor pink me-3" href="#"><i class="bi bi-circle-fill fs-3"></i></span>
-        </div>
-        <p class="config-heading fw-normal">THREE DIMENSIONAL SHAPES</p>
-        <ul class="themes p-0 mt-2 d-flex flex-wrap align-content-center">
-            <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">1. Earth Lines Sphere</span>
-                <span class="cursor" id="video1" href="#"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video1.mp4" data-bs-dismiss="offcanvas"></video></span>
-            </li>
-            <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">2. 3D Abstract Ball</span>
-                <span class="cursor" id="video2" href="#"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video2.mp4" data-bs-dismiss="offcanvas"></video></span>
-            </li>
-            <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">3. Water Waves</span>
-                <span class="cursor" id="video3" href="#"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video3.mp4" data-bs-dismiss="offcanvas"></video></span>
-            </li>
-            <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">4. Liquids Wavy</span>
-                <span class="cursor" id="video4" href="#"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video4.mp4" data-bs-dismiss="offcanvas"></video></span>
-            </li>
-            <li class="list-group pe-2  text-secondary"><span class="config-heading pb-3">5. Simple Strings</span>
-                <span class="cursor" id="video5" href="#"><video muted autoplay loop
-                     src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video5.mp4" data-bs-dismiss="offcanvas"></video></span>
-            </li>
-        </ul>
-    </div>
-    <!-- MENU-CONTROL -->
-    <a class="menu-bar-control position-fixed d-flex flex-column align-items-center justify-content-center rounded-circle hover01" data-bs-toggle="offcanvas"
-     href="#menu-bar">
-        <i class="bi bi-list"></i>
-    </a>
-    <!-- MENU-BAR -->
-    <div class="offcanvas offcanvas-end overflow-auto" id="menu-bar" data-bs-scroll="true">
-        <div class="w-50 mx-auto">
-            <p class="pb-3">Menu</p>
-            <ul class="menu p-0">
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Home"><i class="pe-3 las la-home"></i>Home</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#About"><i class="pe-3 lar la-user"></i>About</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Resume"><i class="pe-3 las la-briefcase"></i>Resume</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Services"><i class="pe-3 las la-stream"></i>Services</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Skills"><i class="pe-3 las la-shapes"></i>Skills</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Portfolio"><i class="pe-3 las la-grip-vertical"></i>Portfolio</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Testimonial"><i class="pe-3 lar la-comment"></i>Testimonial</a>
-                </li>
-                <li class="list-group">
-                    <a class="text-decoration-none d-flex align-items-center" href="#Contact"><i class="pe-3 las la-envelope"></i>Contact</a>
-                </li>
-            </ul>
-            <p class="text-capitalize pt-3 pb-2">Social</p>
-            <ul class="social d-flex align-items-center p-0 gap-3">
-                <li class="list-group"><a class="text-decoration-none hover03" href="#"><i class="lab la-instagram"></i></a></li>
-                <li class="list-group"><a class="text-decoration-none hover03" href="#"><i class="lab la-twitter"></i></a></li>
-                <li class="list-group"><a class="text-decoration-none hover03" href="#"><i class="lab la-dribbble"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- FLOATING NAVBAR -->
-    <nav class="pt-3 rounded-pill d-none d-lg-block">
-        <ul class="p-0">
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Home" href="#Home">
-                    <i class="las la-home"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" href="#About">
-                    <i class="lar la-user"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Resume" href="#Resume">
-                    <i class="las la-briefcase"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Services" href="#Services">
-                    <i class="las la-stream"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skills" href="#Skills">
-                    <i class="las la-shapes"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio" href="#Portfolio">
-                    <i class="las la-grip-vertical"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Testimonial"
-                 href="#Testimonial">
-                    <i class="lar la-comment"></i>
-                </a>
-            </li>
-            <li class="list-group py-2 px-3">
-                <a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact" href="#Contact">
-                    <i class="las la-envelope"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <section class="parent">
-        <div class="container px-lg-5">
-            <div class="row">
-                <div class="col-xl-3 py-4 px-3 dvh-100 position-fixed start-0 d-none d-xl-block d-xl-flex align-items-xl-center">
-                    <div class="profile p-4">
-                        <div class="d-flex align-items-center justify-content-between pb-4">
-                            <h1 class="font-monospace text-white m-0 ps-3">Deep</h1>
-                            <span class="profile-title text-white">
-                                <p class=" m-0">Full Stack</p>Developer
-                            </span>
-                        </div>
-                        <!-- <img class="profile-image rounded-5 w-100 mb-2" src="assets/image/me.jpg" alt="Hi there! i m deep."> -->
-                        <div class="profile-subtitle">
-                            <h2 class="fs-4 text-center text-white fw-light mb-2">deepk2891@gmail.com</h2>
-                            <h2 class="fs-4 text-center text-white fw-light mb-2">Based in Gujarat, IN</h2>
-                            <p class="fs-6 text-center mt-4 mb-3">© 2023 Deep. All Rights Reserved</p>
-                        </div>
-                        <ul class="profile-icons d-flex justify-content-center gap-2 p-0 mt-4">
-                            <li class="list-group">
-                                <a class="bi-instagram fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.instagram.com" target="_blank"></a>
-                            </li>
-                            <li class="list-group">
-                                <a class="bi-twitter fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.twitter.com" target="_blank"></a>
-                            </li>
-                            <li class="list-group">
-                                <a class="bi-linkedin fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.linkedin.com" target="_blank"></a>
-                            </li>
-                            <li class="list-group">
-                                <a class="bi-github fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.github.com/deepk2891" target="_blank"></a>
-                            </li>
-                        </ul>
-                        <!-- mail -->
-                        <a href="mailto:deepk2891@gmail.com" class="hire-me text-decoration-none rounded-5 d-flex align-items-center justify-content-center mt-4">
-                            <i class="las la-envelope fs-4 pe-2"></i>HIRE ME!
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-9 py-4 px-0 ms-auto dvh-100 pt-0">
-                    <div class="profile p-4 my-5 d-block d-xl-none">
-                        <div class="d-flex align-items-center justify-content-between pb-4">
-                            <h1 class="font-monospace text-white m-0 ps-3">Deep</h1>
-                            <span class="profile-title text-white">
-                                <p class=" m-0">Full Stack</p>Developer
-                            </span>
-                        </div>
-                        <!-- <img class="profile-image rounded-5 w-100 mb-5" src="assets/image/me.jpg" alt="Hi there! i m deep."> -->
-                        <div class="profile-subtitle">
-                            <h2 class="fs-4 text-center text-white fw-light mb-2">deepk2891@gmail.com</h2>
-                            <h2 class="fs-4 text-center text-white fw-light mb-2">Based in Gujarat, IN</h2>
-                            <p class="text-center mt-4 mb-3">© 2023 Deep. All Rights Reserved</p>
-                        </div>
-                        <ul class="profile-icons d-flex justify-content-center gap-2 p-0 mt-4">
-                            <li class="list-group">
-                                <a class="bi-instagram fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.instagram.com" target="_blank"></a>
-                            </li>
-                            <li class="list-group">
-                                <a class="bi-twitter fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.twitter.com" target="_blank"></a>
-                            </li>
-                            <li class="list-group">
-                                <a class="bi-linkedin fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.linkedin.com" target="_blank"></a>
-                            </li>
-                            <li class="list-group">
-                                <a class="bi-github fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
-                                 href="https://www.github.com/deepk2891" target="_blank"></a>
-                            </li>
-                        </ul>
-                        <!-- mail -->
-                        <a href="mailto:deepk2891@gmail.com" class="hire-me text-decoration-none rounded-5 d-flex align-items-center justify-content-center mt-4 mb-2">
-                            <i class="las la-envelope fs-4 pe-2"></i>HIRE ME!
-                        </a>
-                    </div>
-                    <section class="home section" id="Home">
-                        <p class="section-title rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-home"></i>INTRODUCE
-                        </p>
-                        <h2 class="display-1 white">Say Hi from <span class="green">Deep</span>, Website Designer and Developer</h2>
-                        <p class="w-75 py-4 fs-5">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="#Portfolio" class="myprojects position-relative inline-block text-decoration-none white border border-1 rounded-circle p-2 green">
-                                <img src="assets/image/round-text.png" alt="My Projects" id="myprojects-img">
-                                <i class="las la-arrow-down"></i>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-wrap justify-content-start my-5">
-                            <div class="experience me-5">
-                                <h2 class="display-3 green">0+</h1>
-                                    <p>YEARS OF <br>EXPERIENCE</p>
-                            </div>
-                            <div class="projects ms-5">
-                                <h2 class="display-3 green">12+</h1>
-                                    <p>PROJECT COMPLETED <br> ON MANY TOPICS</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="about pt-5" id="About">
-                        <h3 class="section-title rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="lar la-user"></i>ABOUT
-                        </h3>
-                        <h4 class="white display-3">Every great design begin with
-                            an even <span class="green">better story</span>
-                        </h4>
-                        <p class="pt-3 pb-5 fs-5">Since beginning my journey as a freelance designer nearly 3 years ago, I've done remote work for agencies, consulted for
-                            startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident,
-                            naturally curious, and perpetually working on improving my chopsone design problem at a time.
-                        </p>
-                    </section>
-                    <section class="resume pt-5" id="Resume">
-                        <h3 class="section-title rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-briefcase"></i>RESUME
-                        </h3>
-                        <h4 class="display-5 white mb-5">Education & <span class="green">Experience</span></h4>
-                        <div class="item">
-                            <p class="mb-4">2020 - 2023</p>
-                            <h5 class="white fs-4 fw-light">Bachelor Degree of Computer Applications</h5>
-                            <p class="">Veer Narmad South Gujarat University</p>
-                        </div>
-                    </section>
-                    <section class="services pt-5 pb-3" id="Services">
-                        <h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-stream"></i>SERVICES
-                        </h3>
-                        <h4 class="display-5 white mb-5">My <span class="green">Specializations</span></h4>
-                        <div class="service rounded-5 my-3 hover02">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <div class="white fs-3 fw-light">Website Design</div>
-                                    <p class="py-1">I created digital products with unique ideas use HTML5, CSS3, BOOTSTRAP, JQuery, JavaScript</p>
-                                </div>
-                                <i class="las la-bezier-curve green fs-1"></i>
-                            </div>
-                            <span class="py-2">12 PROJECTS</span>
-                        </div>
-                        <div class="service rounded-5 my-3 hover02">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <div class="white fs-3 fw-light">Development</div>
-                                    <p class="py-1">I build website go live with HTML5, CSS3, BOOTSTRAP, JQuery, JavaScript. <br> Currently i am exploring React js.</p>
-                                </div>
-                                <i class="las la-code green fs-1"></i>
-                            </div>
-                            <span class="py-2">0 PROJECTS</span>
-                        </div>
-                        <div class="service rounded-5 my-3 hover02">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <div class="white fs-3 fw-light">SEO</div>
-                                    <p class="py-1">Increase the traffic for your website with SEO optimized</p>
-                                </div>
-                                <i class="las la-rocket green fs-1"></i>
-                            </div>
-                            <span class="py-2">0 PROJECTS</span>
-                        </div>
-                    </section>
-                    <section class="skills pt-5 pb-5" id="Skills">
-                        <h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-shapes"></i>SKILLS
-                        </h3>
-                        <h4 class="display-5 white mb-5">My <span class="green">Advantages</span></h4>
-                        <div class="d-flex flex-wrap gap-2">
-                            <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" class="html img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" class="css img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/Bootstrap%205-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" class="bootstrap img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/Tailwind%20CSS-%231a202c.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" class="tailwind img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/jQuery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white" class="jquery img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/jQuery%20UI-%230769AD.svg?style=for-the-badge&logo=jqueryui&logoColor=white" class="jquery-ui img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" class="javascript img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" class="vscode img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" class="c img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white" class="git img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" class="github img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" class="vercel img-fluid" alt="html">
-                            <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" class="netlify img-fluid" alt="html">                          
-                                    
-                        </div>
-                        <p class="fs-6 m-0 pt-3 pb-1">Also i am exploring React js</p>
-                        <img src="https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white" class="react img-fluid" alt="html">                          
+		<!-- SETTING -->
+		<div class="theme-switcher" data-bs-toggle="offcanvas" data-bs-target="#config-bar">
+			<span class="setting rounded d-flex align-items-center justify-content-center"><i class="las la-cog"></i></span>
+		</div>
+		<!-- CONFIGURATION-BAR -->
+		<div class="offcanvas offcanvas-end overflow-auto" id="config-bar">
+			<h5 class="offcanvas-title fs-2 px-0 pt-0 fw-light">Configuration</h5>
+			<button class="config-bar-close btn" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
+			<p class="config-heading fw-normal">COLORS</p>
+			<div class="pt-2 mb-5">
+				<span class="color-switch cursor default-green me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor yellow me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor orange me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor light-blue me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor gray me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor dark-blue me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor red me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+				<span class="color-switch cursor pink me-3"><i class="bi bi-circle-fill fs-3"></i></span>
+			</div>
+			<p class="config-heading fw-normal">THREE DIMENSIONAL SHAPES</p>
+			<ul class="themes p-0 mt-2 d-flex flex-wrap align-content-center">
+				<li class="list-group pe-2 text-secondary">
+					<span class="config-heading pb-3">1. Earth Lines Sphere</span>
+					<span class="cursor" id="video1" href="#"
+						><video muted autoplay loop src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video1.mp4" data-bs-dismiss="offcanvas"></video
+					></span>
+				</li>
+				<li class="list-group pe-2 text-secondary">
+					<span class="config-heading pb-3">2. 3D Abstract Ball</span>
+					<span class="cursor" id="video2" href="#"
+						><video muted autoplay loop src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video2.mp4" data-bs-dismiss="offcanvas"></video
+					></span>
+				</li>
+				<li class="list-group pe-2 text-secondary">
+					<span class="config-heading pb-3">3. Water Waves</span>
+					<span class="cursor" id="video3" href="#"
+						><video muted autoplay loop src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video3.mp4" data-bs-dismiss="offcanvas"></video
+					></span>
+				</li>
+				<li class="list-group pe-2 text-secondary">
+					<span class="config-heading pb-3">4. Liquids Wavy</span>
+					<span class="cursor" id="video4" href="#"
+						><video muted autoplay loop src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video4.mp4" data-bs-dismiss="offcanvas"></video
+					></span>
+				</li>
+				<li class="list-group pe-2 text-secondary">
+					<span class="config-heading pb-3">5. Simple Strings</span>
+					<span class="cursor" id="video5" href="#"
+						><video muted autoplay loop src="https://wpriverthemes.com/drake/wp-content/themes/drake/assets/images/video5.mp4" data-bs-dismiss="offcanvas"></video
+					></span>
+				</li>
+			</ul>
+		</div>
+		<!-- MENU-CONTROL -->
+		<a class="menu-bar-control position-fixed d-flex flex-column align-items-center justify-content-center rounded-circle hover01" data-bs-toggle="offcanvas" href="#menu-bar">
+			<i class="bi bi-list"></i>
+		</a>
+		<!-- MENU-BAR -->
+		<div class="offcanvas offcanvas-end overflow-auto" id="menu-bar" data-bs-scroll="true">
+			<div class="w-50 mx-auto">
+				<p class="pb-3">Menu</p>
+				<ul class="menu p-0">
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Home"><i class="pe-3 las la-home"></i>Home</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#About"><i class="pe-3 lar la-user"></i>About</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Resume"><i class="pe-3 las la-briefcase"></i>Resume</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Services"><i class="pe-3 las la-stream"></i>Services</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Skills"><i class="pe-3 las la-shapes"></i>Skills</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Portfolio"><i class="pe-3 las la-grip-vertical"></i>Portfolio</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Testimonial"><i class="pe-3 lar la-comment"></i>Testimonial</a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none d-flex align-items-center" href="#Contact"><i class="pe-3 las la-envelope"></i>Contact</a>
+					</li>
+				</ul>
+				<p class="text-capitalize pt-3 pb-2">Social</p>
+				<ul class="social d-flex align-items-center p-0 gap-3">
+					<li class="list-group">
+						<a class="text-decoration-none hover03" href="#"><i class="lab la-instagram"></i></a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none hover03" href="#"><i class="lab la-twitter"></i></a>
+					</li>
+					<li class="list-group">
+						<a class="text-decoration-none hover03" href="#"><i class="lab la-dribbble"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- FLOATING NAVBAR -->
+		<nav class="pt-3 rounded-pill d-none d-lg-block">
+			<ul class="p-0">
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Home" href="#Home">
+						<i class="las la-home"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" href="#About">
+						<i class="lar la-user"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Resume" href="#Resume">
+						<i class="las la-briefcase"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Services" href="#Services">
+						<i class="las la-stream"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skills" href="#Skills">
+						<i class="las la-shapes"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio" href="#Portfolio">
+						<i class="las la-grip-vertical"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Testimonial" href="#Testimonial">
+						<i class="lar la-comment"></i>
+					</a>
+				</li>
+				<li class="list-group py-2 px-3">
+					<a class="text-decoration-none d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact" href="#Contact">
+						<i class="las la-envelope"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="parent">
+			<div class="container px-lg-5">
+				<div class="row">
+					<div class="col-xl-3 py-4 px-3 dvh-100 position-fixed start-0 d-none d-xl-block d-xl-flex align-items-xl-center">
+						<div class="profile p-4">
+							<div class="d-flex align-items-center justify-content-between pb-4">
+								<h1 class="font-monospace text-white m-0 ps-3">Deep</h1>
+								<p class="profile-title text-white m-0">
+									Full Stack <br />
+									Developer
+								</p>
+							</div>
+							<img class="profile-image rounded-5 w-100 mb-2" src="assets/image/me.jpg" alt="Hi there! i m deep." />
+							<div class="profile-subtitle">
+								<h2 class="fs-4 text-center text-white fw-light mb-2">deepk2891@gmail.com</h2>
+								<h2 class="fs-4 text-center text-white fw-light mb-2">Based in Gujarat, IN</h2>
+								<p class="fs-6 text-center mt-4 mb-3">© 2023 Deep. All Rights Reserved</p>
+							</div>
+							<ul class="profile-icons d-flex justify-content-center gap-2 p-0 mt-4">
+								<li class="list-group">
+									<a
+										class="bi-instagram fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.instagram.com"
+										target="_blank"
+									></a>
+								</li>
+								<li class="list-group">
+									<a
+										class="bi-twitter fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.twitter.com"
+										target="_blank"
+									></a>
+								</li>
+								<li class="list-group">
+									<a
+										class="bi-linkedin fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.linkedin.com"
+										target="_blank"
+									></a>
+								</li>
+								<li class="list-group">
+									<a
+										class="bi-github fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.github.com/deepk2891"
+										target="_blank"
+									></a>
+								</li>
+							</ul>
+							<!-- mail -->
+							<a href="mailto:deepk2891@gmail.com" class="hire-me text-decoration-none rounded-5 d-flex align-items-center justify-content-center mt-4">
+								<i class="las la-envelope fs-4 pe-2"></i>HIRE ME!
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-9 py-4 px-0 ms-auto dvh-100 pt-0">
+						<div class="profile p-4 my-5 d-block d-xl-none">
+							<div class="d-flex align-items-center justify-content-between pb-4">
+								<h1 class="font-monospace text-white m-0 ps-3">Deep</h1>
+								<span class="profile-title text-white">
+									<p class="m-0">Full Stack</p>
+									Developer
+								</span>
+							</div>
+							<img class="profile-image rounded-5 w-100 mb-5" src="assets/image/me.jpg" alt="Hi there! i m deep." />
+							<div class="profile-subtitle">
+								<h2 class="fs-4 text-center text-white fw-light mb-2">deepk2891@gmail.com</h2>
+								<h2 class="fs-4 text-center text-white fw-light mb-2">Based in Gujarat, IN</h2>
+								<p class="text-center mt-4 mb-3">© 2023 Deep. All Rights Reserved</p>
+							</div>
+							<ul class="profile-icons d-flex justify-content-center gap-2 p-0 mt-4">
+								<li class="list-group">
+									<a
+										class="bi-instagram fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.instagram.com"
+										target="_blank"
+									></a>
+								</li>
+								<li class="list-group">
+									<a
+										class="bi-twitter fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.twitter.com"
+										target="_blank"
+									></a>
+								</li>
+								<li class="list-group">
+									<a
+										class="bi-linkedin fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.linkedin.com"
+										target="_blank"
+									></a>
+								</li>
+								<li class="list-group">
+									<a
+										class="bi-github fs-6 p-4 text-decoration-none d-flex flex-column align-items-center justify-content-center rounded-circle hover01"
+										href="https://www.github.com/deepk2891"
+										target="_blank"
+									></a>
+								</li>
+							</ul>
+							<!-- mail -->
+							<a href="mailto:deepk2891@gmail.com" class="hire-me text-decoration-none rounded-5 d-flex align-items-center justify-content-center mt-4 mb-2">
+								<i class="las la-envelope fs-4 pe-2"></i>HIRE ME!
+							</a>
+						</div>
+						<section class="home section" id="Home">
+							<p class="section-title rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-home"></i>INTRODUCE</p>
+							<h2 class="display-1 white">Say Hi from <span class="green">Deep</span>, Website Designer and Developer</h2>
+							<p class="w-75 py-4 fs-5">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+							<div class="d-flex justify-content-center">
+								<a href="#Portfolio" class="myprojects position-relative inline-block text-decoration-none white border border-1 rounded-circle p-2 green">
+									<img src="assets/image/round-text.png" alt="My Projects" id="myprojects-img" />
+									<i class="las la-arrow-down"></i>
+								</a>
+							</div>
+							<div class="d-flex flex-wrap justify-content-start my-5">
+								<div class="experience me-5">
+									<h2 class="display-3 green">0+</h2>
+									<p>YEARS OF <br />EXPERIENCE</p>
+								</div>
+								<div class="projects ms-5">
+									<h2 class="display-3 green">12+</h2>
+									<p>
+										PROJECT COMPLETED <br />
+										ON MANY TOPICS
+									</p>
+								</div>
+							</div>
+						</section>
+						<section class="about pt-5" id="About">
+							<h3 class="section-title rounded-pill d-inline-flex align-items-center white fw-light"><i class="lar la-user"></i>ABOUT</h3>
+							<h4 class="white display-3">Every great design begin with an even <span class="green">better story</span></h4>
+							<p class="pt-3 pb-5 fs-5">
+								Since beginning my journey as a freelance designer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people
+								to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem
+								at a time.
+							</p>
+						</section>
+						<section class="resume pt-5" id="Resume">
+							<h3 class="section-title rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-briefcase"></i>RESUME</h3>
+							<h4 class="display-5 white mb-5">Education & <span class="green">Experience</span></h4>
+							<div class="item">
+								<p class="mb-4">2020 - 2023</p>
+								<h5 class="white fs-4 fw-light">Bachelor Degree of Computer Applications</h5>
+								<p class="">Veer Narmad South Gujarat University</p>
+							</div>
+						</section>
+						<section class="services pt-5 pb-3" id="Services">
+							<h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-stream"></i>SERVICES</h3>
+							<h4 class="display-5 white mb-5">My <span class="green">Specializations</span></h4>
+							<div class="service rounded-5 my-3 hover02">
+								<div class="d-flex justify-content-between align-items-center">
+									<div>
+										<div class="white fs-3 fw-light">Website Design</div>
+										<p class="py-1">I created digital products with unique ideas use HTML5, CSS3, BOOTSTRAP, JQuery, JavaScript</p>
+									</div>
+									<i class="las la-bezier-curve green fs-1"></i>
+								</div>
+								<span class="py-2">12 PROJECTS</span>
+							</div>
+							<div class="service rounded-5 my-3 hover02">
+								<div class="d-flex justify-content-between align-items-center">
+									<div>
+										<div class="white fs-3 fw-light">Development</div>
+										<p class="py-1">
+											I build website go live with HTML5, CSS3, BOOTSTRAP, JQuery, JavaScript. <br />
+											Currently i am exploring React js.
+										</p>
+									</div>
+									<i class="las la-code green fs-1"></i>
+								</div>
+								<span class="py-2">0 PROJECTS</span>
+							</div>
+							<div class="service rounded-5 my-3 hover02">
+								<div class="d-flex justify-content-between align-items-center">
+									<div>
+										<div class="white fs-3 fw-light">SEO</div>
+										<p class="py-1">Increase the traffic for your website with SEO optimized</p>
+									</div>
+									<i class="las la-rocket green fs-1"></i>
+								</div>
+								<span class="py-2">0 PROJECTS</span>
+							</div>
+						</section>
+						<section class="skills pt-5 pb-5" id="Skills">
+							<h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-shapes"></i>SKILLS</h3>
+							<h4 class="display-5 white mb-5">My <span class="green">Advantages</span></h4>
+							<div class="d-flex flex-wrap gap-2">
+								<img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" class="html img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" class="css img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/Bootstrap%205-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" class="bootstrap img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/Tailwind%20CSS-%231a202c.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" class="tailwind img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/jQuery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white" class="jquery img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/jQuery%20UI-%230769AD.svg?style=for-the-badge&logo=jqueryui&logoColor=white" class="jquery-ui img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" class="javascript img-fluid" alt="html" />
+								<img
+									src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"
+									class="vscode img-fluid"
+									alt="html"
+								/>
+								<img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" class="c img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white" class="git img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" class="github img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" class="vercel img-fluid" alt="html" />
+								<img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" class="netlify img-fluid" alt="html" />
+							</div>
+							<p class="fs-6 m-0 pt-3 pb-1">Also i am exploring React js</p>
+							<img src="https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white" class="react img-fluid" alt="html" />
+						</section>
+						<section class="portfolio pb-5" id="Portfolio">
+							<h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-grip-vertical"></i>PORTFOLIO</h3>
+							<h4 class="display-5 white mb-5">Featured <span class="green">Projects</span></h4>
+							<div class="row gy-5 gx-3 pe-lg-5">
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/portfolio.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/adminpanel.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/nike.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/buywow.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/rayban.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/harley-davidson.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/coffeeking.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/coffee.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="project-card">
+										<img src="./assets/image/plant-ecommerce.png" class="img-fluid" alt="Project" />
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="testimonial pt-5 pb-3" id="Testimonial">
+							<h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-comment"></i>TESTIMONIAL</h3>
+							<h4 class="display-5 white pb-5">Trusted by <span class="green">Many Clients</span></h4>
+							<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="review rounded-5 w-75 mx-auto">
+											<div class="d-flex justify-content-start align-items-center">
+												<img class="rounded-circle" src="./assets/image/testimonial-1.jpg" alt="customer" />
+												<div class="ms-3">
+													<h4 class="pt-3 white fs-5 fw-light">Sundar Pichai</h4>
+													<p>CEO of <span class="green"> Google</span></p>
+												</div>
+											</div>
+											<p class="fs-5 pt-4 white">
+												“Extremely profressional and fast service!. Deep is a master of code and he also very creative. We done many projects with him and certain will
+												continue.”
+											</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="review rounded-5 w-75 mx-auto">
+											<div class="d-flex justify-content-start align-items-center">
+												<img class="rounded-circle overflow-hidden" src="./assets/image/testimonial-2.jpg" alt="customer" />
+												<div class="ms-3">
+													<h4 class="pt-3 white fs-5 fw-light">John Donahoe</h4>
+													<p>CEO of <span class="green"> Nike </span></p>
+												</div>
+											</div>
+											<p class="fs-5 pt-4 white">
+												“Deep was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer that you can trust with any
+												project from A-Z.”
+											</p>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</section>
+						<section class="contact py-4" id="Contact">
+							<h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light"><i class="las la-envelope"></i>CONTACT</h3>
+							<h4 class="display-5 white pb-3">Let's Work <span class="green">Together!</span></h4>
+							<p class="fs-4 text-white fw-light mb-5">deepk2891@gmail.com</p>
+							<form>
+								<div class="row g-3">
+									<div class="col-md-6">
+										<label for="your-name" class="form-label">Your Name</label>
+										<input type="text" class="form-control" id="your-name" name="your-name" required />
+									</div>
+									<div class="col-md-6">
+										<label for="your-surname" class="form-label">Your Surname</label>
+										<input type="text" class="form-control" id="your-surname" name="your-surname" required />
+									</div>
+									<div class="col-md-6">
+										<label for="your-email" class="form-label">Your Email</label>
+										<input type="email" class="form-control" id="your-email" name="your-email" required />
+									</div>
+									<div class="col-md-6">
+										<label for="your-subject" class="form-label">Your Subject</label>
+										<input type="text" class="form-control" id="your-subject" name="your-subject" />
+									</div>
+									<div class="col-12">
+										<label for="your-message" class="form-label">Your Message</label>
+										<textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+									</div>
+									<div class="col-12">
+										<div class="row">
+											<div class="col-md-12">
+												<button type="submit" class="send-msg btn btn-dark w-100 fw-bold">Send</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="./assets/js/jquery-3.6.0.min..js"></script>
+		<script>
+			$(document).ready(function () {
+				// TOOL-TIP
+				const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+				const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl))
 
-                    </section>
-                    <section class="portfolio pb-5" id="Portfolio">
-                        <h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-grip-vertical"></i>PORTFOLIO
-                        </h3>
-                        <h4 class="display-5 white mb-5">Featured <span class="green">Projects</span></h4>
-                        <div class="row">
-                            <div class="col-12 px-3 col-lg-11 px-lg-0">
-                                <div class="d-block d-sm-flex flex-wrap align-items-center mt-5">
-                                    <h4 class="display-5 white mb-3 green text-center text-sm-start">Portfolio</h4>
-                                    <div class="text-center text-sm-start pt-3 pt-sm-0 mt-sm-0 ms-sm-3">
-                                        <a class="live-preview d-sm-flex align-items-sm-center" href="https://deepk2891.github.io/DeepKothari.me/" target="_blank">
-                                            LIVE PREVIEW<i class='bx bxl-github bx-burst bx-flip-horizontal ps-2 fs-4 d-none d-sm-block'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project py-5">
-                                    <img class="img-fluid" src="assets/image/portfolio.png" alt="Portfolio">
-                                </div>
-                            </div>
-                            <div class="col-12 px-3 col-lg-11 px-lg-0">
-                                <div class="d-block d-sm-flex flex-wrap align-items-center mt-5">
-                                    <h4 class="display-5 white mb-3 green text-center text-sm-start">Admin Dashboard</h4>
-                                    <div class="text-center text-sm-start pt-3 pt-sm-0 mt-sm-0 ms-sm-3">
-                                        <a class="live-preview d-sm-flex align-items-sm-center" href="https://deepk2891.github.io/Admin-panel-1-CSS3/" target="_blank">
-                                            LIVE PREVIEW<i class='bx bxl-github bx-burst bx-flip-horizontal ps-2 fs-4 d-none d-sm-block'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project py-5">
-                                    <img class="img-fluid" src="assets/image/adminpanel.png" alt="Amin-Panel">
-                                </div>
-                            </div>
-                            <div class="col-12 px-3 col-lg-11 px-lg-0">
-                                <div class="d-block d-sm-flex flex-wrap align-items-center mt-5">
-                                    <h4 class="display-5 white mb-3 green text-center text-sm-start">HarleyDavidson.com</h4>
-                                    <div class="text-center text-sm-start pt-3 pt-sm-0 mt-sm-0 ms-sm-3">
-                                        <a class="live-preview d-sm-flex align-items-sm-center" href="https://deepk2891.github.io/harley-davidson.com/" target="_blank">
-                                            LIVE PREVIEW<i class='bx bxl-github bx-burst bx-flip-horizontal ps-2 fs-4 d-none d-sm-block'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project py-5">
-                                    <img class="img-fluid" src="assets/image/harley-davidson.png" alt="Coffee website">
-                                </div>
-                            </div>
-                            <div class="col-12 px-3 col-lg-11 px-lg-0">
-                                <div class="d-block d-sm-flex flex-wrap align-items-center mt-5">
-                                    <h4 class="display-5 white mb-3 green text-center text-sm-start"> coffee King website</h4>
-                                    <div class="text-center text-sm-start pt-3 pt-sm-0 mt-sm-0 ms-sm-3">
-                                        <a class="live-preview d-sm-flex align-items-sm-center" href="https://deepk2891.github.io/Coffee-king-website/" target="_blank">
-                                            LIVE PREVIEW<i class='bx bxl-github bx-burst bx-flip-horizontal ps-2 fs-4 d-none d-sm-block'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project py-5">
-                                    <img class="img-fluid" src="assets/image/coffeeking.png" alt="Coffee king website">
-                                </div>
-                            </div>
-                            <div class="col-12 px-3 col-lg-11 px-lg-0">
-                                <div class="d-block d-sm-flex flex-wrap align-items-center mt-5">
-                                    <h4 class="display-5 white mb-3 green text-center text-sm-start"> coffee website</h4>
-                                    <div class="text-center text-sm-start pt-3 pt-sm-0 mt-sm-0 ms-sm-3">
-                                        <a class="live-preview d-sm-flex align-items-sm-center" href="https://deepk2891.github.io/Coffee-website-1/" target="_blank">
-                                            LIVE PREVIEW<i class='bx bxl-github bx-burst bx-flip-horizontal ps-2 fs-4 d-none d-sm-block'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project py-5">
-                                    <img class="img-fluid" src="assets/image/coffee.png" alt="Coffee website">
-                                </div>
-                            </div>
-                            <div class="col-12 px-3 col-lg-11 px-lg-0">
-                                <div class="d-block d-sm-flex flex-wrap align-items-center mt-5">
-                                    <h4 class="display-5 white mb-3 green text-center text-sm-start">plant-ecommerce</h4>
-                                    <div class="text-center text-sm-start pt-3 pt-sm-0 mt-sm-0 ms-sm-3">
-                                        <a class="live-preview d-sm-flex align-items-sm-center" href="https://deepk2891.github.io/plant-ecommerce-website/"
-                                         target="_blank">
-                                            LIVE PREVIEW<i class='bx bxl-github bx-burst bx-flip-horizontal ps-2 fs-4 d-none d-sm-block'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project py-5">
-                                    <img class="img-fluid" src="assets/image/plant-ecommerce.png" alt="Coffee website">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="testimonial pt-5 pb-3" id="Testimonial">
-                        <h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-comment"></i>TESTIMONIAL
-                        </h3>
-                        <h4 class="display-5 white pb-5">Trusted by <span class="green">Many Clients</span></h4>
-                        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="review rounded-5 w-75 mx-auto">
-                                        <div class="d-flex justify-content-start align-items-center">
-                                            <img class="rounded-circle" src="./assets/image/testimonial-1.jpg" alt="">
-                                            <div class="ms-3">
-                                                <h4 class="pt-3 white fs-5 fw-light">Sundar Pichai</h4>
-                                                <p>CEO of <span class="green"> Google</span></p>
-                                            </div>
-                                        </div>
-                                        <p class="fs-5 pt-4 white">“Extremely profressional and fast service!. Deep is a master
-                                            of code and he also very creative. We done many projects with
-                                            him and certain will continue.”</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="review rounded-5 w-75 mx-auto">
-                                        <div class="d-flex justify-content-start align-items-center">
-                                            <img class="rounded-circle overflow-hidden" src="./assets/image/testimonial-2.jpg" alt="">
-                                            <div class="ms-3">
-                                                <h4 class="pt-3 white fs-5 fw-light">John Donahoe</h4>
-                                                <p>CEO of <span class="green"> Nike </span></p>
-                                            </div>
-                                        </div>
-                                        <p class="fs-5 pt-4 white">“Deep was a real pleasure to work with and we look
-                                            forward to working with him again. He's definitely the kind of
-                                            designer that you can trust with any project from A-Z.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </section>
-                    <section class="contact py-4" id="Contact">
-                        <h3 class="section-title mt-5 rounded-pill d-inline-flex align-items-center white fw-light">
-                            <i class="las la-envelope"></i>CONTACT
-                        </h3>
-                        <h4 class="display-5 white pb-3">Let's Work <span class="green">Together!</span></h4>
-                        <p class="fs-4 text-white fw-light mb-5">deepk2891@gmail.com</p>
-                        <form>
-                            <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="your-name" class="form-label ">Your Name</label>
-                                <input type="text" class="form-control" id="your-name" name="your-name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="your-surname" class="form-label">Your Surname</label>
-                                <input type="text" class="form-control" id="your-surname" name="your-surname" required>
-                            </div>
-                            <div class="col-md-6">
-                                        <label for="your-email" class="form-label">Your Email</label>
-                                        <input type="email" class="form-control" id="your-email" name="your-email" required>
-                            </div>
-                            <div class="col-md-6">
-                                        <label for="your-subject" class="form-label">Your Subject</label>
-                                        <input type="text" class="form-control" id="your-subject" name="your-subject">
-                            </div>
-                            <div class="col-12">
-                                        <label for="your-message" class="form-label">Your Message</label>
-                                        <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <button type="submit" class="send-msg btn btn-dark w-100 fw-bold">Send</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery-3.6.0.min..js"></script>
-    <script>
-        $(document).ready(function ()
-        {
-            // TOOL-TIP
-            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-            const tooltipList = [ ...tooltipTriggerList ].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+				// MY PROJECTS IMAGE IN HOME SECTION ROTATION WHILE BODY SCROLLING
+				window.addEventListener(
+					"scroll",
+					() => {
+						document.body.style.setProperty("--scroll", window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
+					},
+					false
+				)
 
-            // MY PROJECTS IMAGE IN HOME SECTION ROTATION WHILE BODY SCROLLING
-            window.addEventListener(
-                "scroll",
-                () =>
-                {
-                    document.body.style.setProperty(
-                        "--scroll",
-                        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-                    );
-                },
-                false
-            );
+				$('span[id^="video"]').click(function (event) {
+					event.preventDefault()
 
-            $('span[id^="video"]').click(function (event)
-            {
-                event.preventDefault();
+					var videoUrl = $(this).find("video").attr("src")
 
-                var videoUrl = $(this).find('video').attr('src');
+					$(".body-overlay source").attr("src", videoUrl)
 
-                $('.body-overlay source').attr('src',videoUrl);
+					$(".body-overlay")[0].load()
+				})
 
-                $('.body-overlay')[ 0 ].load();
-            });
-
-            // color-switch
-            $(".default-green").click(function ()
-            {
-                $(":root").css("--green","#28e98c")
-            });
-            $(".yellow").click(function ()
-            {
-                $(":root").css("--green","#e4af12")
-            });
-            $(".orange").click(function ()
-            {
-                $(":root").css("--green","#fe6f1d")
-            });
-            $(".light-blue").click(function ()
-            {
-                $(":root").css("--green","#14c5fd")
-            });
-            $(".gray").click(function ()
-            {
-                $(":root").css("--green","#c0c0c0")
-            });
-            $(".dark-blue").click(function ()
-            {
-                $(":root").css("--green","#1338f3")
-            });
-            $(".red").click(function ()
-            {
-                $(":root").css("--green","#f31313")
-            });
-            $(".pink").click(function ()
-            {
-                $(":root").css("--green","#ff99cc")
-            });
-        });
-    </script>
-</body>
-
+				// color-switch
+				$(".default-green").click(function () {
+					$(":root").css("--green", "#28e98c")
+				})
+				$(".yellow").click(function () {
+					$(":root").css("--green", "#e4af12")
+				})
+				$(".orange").click(function () {
+					$(":root").css("--green", "#fe6f1d")
+				})
+				$(".light-blue").click(function () {
+					$(":root").css("--green", "#14c5fd")
+				})
+				$(".gray").click(function () {
+					$(":root").css("--green", "#c0c0c0")
+				})
+				$(".dark-blue").click(function () {
+					$(":root").css("--green", "#1338f3")
+				})
+				$(".red").click(function () {
+					$(":root").css("--green", "#f31313")
+				})
+				$(".pink").click(function () {
+					$(":root").css("--green", "#ff99cc")
+				})
+			})
+		</script>
+	</body>
 </html>
